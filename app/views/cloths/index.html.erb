@@ -1,1 +1,5 @@
-<h1>Hi</h1>
+<%= @cloths.each do |cloth| %>
+<h2><%= link_to cloth.name.upcase, cloth_path(cloth) %></h2>
+<h3><%= cloth.brand.upcase %></h3>
+<h3><%= cloth.price1 %></h3>
+<% end %>
