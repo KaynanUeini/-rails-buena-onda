@@ -7,7 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 puts 'Creating cloths...'
-
 cloths_attributes = [
   {
   name: 'saia',
