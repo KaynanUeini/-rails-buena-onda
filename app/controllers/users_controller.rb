@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update]
   def dashboard
     @orders = current_user.orders
+    @shopping_bag = current_user.bag
   end
 
   def orders
@@ -20,6 +21,10 @@ class UsersController < ApplicationController
     else
       render :edit
     end
+  end
+
+  def user_bag
+    @bag = current_user #.bag (VERIFICAR PQ NAO VAI)
   end
 
   private
