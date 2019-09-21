@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
-  resources :cloths, only: [:index, :show] do
+  resources :cloths, only: [:index, :show, ] do
     resources :orders, only: [:new, :create]
   end
 
@@ -9,5 +9,6 @@ Rails.application.routes.draw do
 
   resources :users, only: [:show, :edit, :update, :destroy]
 
-  get 'dashboard/bag', to: 'users#user_bag'# For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'dashboard/bag', to: 'users#user_bag'
+  get 'skirts', to: 'cloths#skirt'# For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

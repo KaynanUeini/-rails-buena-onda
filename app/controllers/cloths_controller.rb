@@ -1,5 +1,5 @@
 class ClothsController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:index, :show]
+  skip_before_action :authenticate_user!, only: [:index, :show, :skirt]
   before_action :set_cloth, only: [:show, :edit]
 
   def index
@@ -16,6 +16,10 @@ class ClothsController < ApplicationController
   end
 
   def edit
+  end
+
+  def skirt
+    @skirts = Cloth.where(category: 'saia')
   end
 
   private
