@@ -1,6 +1,9 @@
 <h1>hello</h1>
 <h1>hello</h1>
+<p>------------</p>
 <%= @skirts.each do |skirt| %>
+<%= link_to skirt_path(skirt) do %>
 <h1><%= skirt.name %></h1>
+<% end %>
 <h2><%= skirt.price1 %></h2>
 <% end %>

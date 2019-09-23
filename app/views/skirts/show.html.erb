@@ -1,0 +1,7 @@
+<h2><%= @skirt.name.upcase %></h2>
+<h2><%= @skirt.description %></h2>
+<h3><%= @skirt.brand.upcase %></h3>
+<h3><%= @skirt.price1 %></h3>
+<h3><%= @skirt.category %></h3>
+<%= render 'skirts/new_order', cloth: @skirt, order: @order %>
+<%=link_to 'Return to all skirts', skirts_path  %>

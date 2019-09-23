@@ -7,6 +7,30 @@
   width: 97%;
   top: 10px;
   z-index: 2;
+  .navbar-light {
+    color: pink;
+  }
+
+  a {
+    margin-right: 50px;
+    color: white;
+
+  }
+
+  a:hover {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+}
+
+.navbar-light {
+  color: pink;
+}
+
+.avatar {
+ border: 3px dotted pink;
 }
 
 .navbar-lewagon:hover {
@@ -18,6 +42,13 @@
   width: 97%;
   top: 10px;
   z-index: 3;
+  .avatar {
+   border: 3px dotted white;
+ }
+
+ #navbardrop {
+  color: white;
+}
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -31,37 +62,24 @@
 .nav-link {
   color: blue;
   &:hover {
-    border-bottom: 2px solid #AA767C;
+    border-bottom: 2px solid white;
   }
 }
 
 .navbar-toggler {
   color: transparent;
-  background: #FFA5A5;
+  background: rgba(255,255,255,0.5);
   opacity: 0.6;
 }
 
 
-a {
-  margin-left: 20px;
-  color: #FFA5A5;
-
-}
-
-a:hover {
-  background-color: transparent;
-  color: #AA767C;
-  text-decoration: none;
-  font-weight: bolder;
-}
-
 .dropdown-item {
-  color: #FFA5A5;
+  color: white;
 
 
   &:hover{
     background-color: transparent;
-    color: #AA767C;
+    color: white;
     text-decoration: underline;
     font-weight: bolder;
   }
@@ -72,7 +90,14 @@ a:hover {
 }
 
 
+//cor de dentro do balao dropdown foto
+.dropdown-menu {
+  border-radius: 15px;
+  background-color: #FFA5A5;
+}
 
- li {
+//cor do 'Roupas' no navbar
+#navbardrop {
   color: #FFA5A5;
- }
+}
+
