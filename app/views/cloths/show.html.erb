@@ -1,7 +1,20 @@
-<h2><%= @cloth.name.upcase %></h2>
-<h2><%= @cloth.description %></h2>
-<h3><%= @cloth.brand.upcase %></h3>
-<h3><%= @cloth.price1 %></h3>
-<h3><%= @cloth.category %></h3>
-<%= render 'cloths/new_order', cloth: @cloth, order: @order %>
-<%=link_to 'Return to all cloths', cloths_path  %>
+  <div class="container pt-5 pr-5">
+    <div class="wrapper">
+      <div class="product-img">
+        <img src="https://source.unsplash.com/random" height="420" width="327">
+      </div>
+      <div class="product-info">
+        <div class="product-text">
+          <h1><%= @cloth.name.upcase %></h1>
+          <h2><%= @cloth.brand.upcase %></h2>
+          <p><%= @cloth.description %> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et saepe iste nesciunt magni dicta, eligendi minima, ullam, quisquam maiores sequi eum officia vel nulla placeat earum ipsa quia ducimus sint.</p>
+          <p><span>R$<%= @cloth.price1 %></span>$</p>
+        </div>
+        <div class="product-price-btn">
+          <%= render 'cloths/new_order', cloth: @cloth, order: @order %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%=link_to 'Return to all cloths', cloths_path  %>

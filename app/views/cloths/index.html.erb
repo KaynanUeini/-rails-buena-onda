@@ -1,1 +1,12 @@
 <h1>Hello!</h1>
+<br>
+<br>
+<br>
+<p>Resultado da pesquisa :</p>
+<%= @cloths.each do |cloth| %>
+<%= link_to cloth_path(cloth) do %>
+<h1><%= cloth.name %></h1>
+<% end %>
+<h2><%= cloth.brand %></h2>
+<h3>R$ <%= cloth.price1 %></h3>
+<% end %>

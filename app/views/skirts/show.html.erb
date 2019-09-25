@@ -3,5 +3,8 @@
 <h3><%= @skirt.brand.upcase %></h3>
 <h3><%= @skirt.price1 %></h3>
 <h3><%= @skirt.category %></h3>
-<%= render 'skirts/new_order', cloth: @skirt, order: @order %>
+<%= simple_form_for @order, url:skirt_orders_path(@skirt), method: :post  do |f| %>
+  <%= f.input :quantity, collection: 1..5, include_blank: false  %>
+  <%= f.submit 'Order', class: 'btn btn-outline-success btn-md' %>
+  <% end %>
 <%=link_to 'Return to all skirts', skirts_path  %>

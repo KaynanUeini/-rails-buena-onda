@@ -141,3 +141,23 @@ img {
   margin-bottom: 1.25rem;
 }
 
+.a_title {
+  color: #FFA5A5;
+}
+
+.a_title:hover {
+  text-decoration: none;
+  color: #FFA5A5;
+  font-weight: bold;
+}
+
+.btn-outline-primary {
+color: #FFA5A5;
+border: 1px solid #FFA5A5;
+
+&:hover {
+background-color: #FFA5A5;
+color: white;
+border: 1px solid #FFA5A5;
+}
+}
