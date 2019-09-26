@@ -76,8 +76,10 @@ img {
   overflow: hidden;
 
   &:hover {
+    transform: scale(0.97);
     .card__image {
       filter: contrast(100%);
+
     }
   }
 }
@@ -95,7 +97,6 @@ img {
   background-size: cover;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
-  filter: contrast(70%);
   //filter: saturate(180%);
   overflow: hidden;
   position: relative;
@@ -139,6 +140,8 @@ img {
   font-size: 0.875rem;
   line-height: 1.5;
   margin-bottom: 1.25rem;
+  color: black;
+  font: 15px minion-pro,serif;
 }
 
 .a_title {
@@ -152,12 +155,20 @@ img {
 }
 
 .btn-outline-primary {
-color: #FFA5A5;
-border: 1px solid #FFA5A5;
+  color: #FFA5A5;
+  border: 1px solid #F7EAE1;
 
-&:hover {
-background-color: #FFA5A5;
-color: white;
-border: 1px solid #FFA5A5;
+  &:hover {
+    background-color: #F7EAE1;
+    color: black;
+    border: 1px solid #F7EAE1;
+  }
 }
+
+
+
+#a-card {
+  text-decoration:none;
+  color: black;
+  font-weight: 1000;
 }

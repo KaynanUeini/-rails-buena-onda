@@ -1,0 +1,33 @@
+.container-grid-photo {
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: 492px 492px;
+  grid-template-rows: 40vh;
+}
+
+.positioner-photo {
+  position:relative;
+  width: 100%;
+  height: 100%;
+  min-height: 84vh;
+  left: 20%;
+  z-index: 1
+}
+
+.positioner-text {
+  position:relative;
+  width: 100%;
+  height: 100%;
+  bottom: 20%;
+  min-height: 100vh;
+  background-color: #F7EAE1;
+}
+
+#p-photo {
+position: absolute;
+font: 50px "LaNord Light", sans-serif;
+color: black;
+top: 35%;
+left: 25%;
+font-weight: 200;
+}

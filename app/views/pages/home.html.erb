@@ -1,98 +1,176 @@
-<div class="container">
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),tinha uma url aqui olhar no codigo do border-bottom: ; ">
-          <%= image_tag "https://source.unsplash.com/random", class: "d-block w-100" %>
-          <div class="carousel-content">
-            <div class="carousel-caption">
-              <h5>Enjoy it!</h5>
-              <h1>Buena Onda Delas<h1>
-                <br>
-              </div>
+<div class="container" style="padding: 0px 0px; margin-bottom: -28px;">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),tinha uma url aqui olhar no codigo do border-bottom: ; ">
+        <%= image_tag "https://source.unsplash.com/random", class: "d-block w-100" %>
+        <div class="carousel-content">
+          <div class="carousel-caption">
+            <h5>Enjoy it!</h5>
+            <h1>Buena Onda Delas<h1>
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),tinha uma url aqui olhar no codigo do bnb">
+          <%= image_tag "https://source.unsplash.com/user/erondu", class: "d-block w-100" %>
+          <div class="carousel-caption">
+            <h5>Enjoy it!</h5>
+            <h1>Buena Onda Delas<h1>
+              <br>
             </div>
           </div>
           <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),tinha uma url aqui olhar no codigo do bnb">
-            <%= image_tag "https://source.unsplash.com/user/erondu", class: "d-block w-100" %>
+            <%= image_tag "https://source.unsplash.com/random", class: "d-block w-100" %>
             <div class="carousel-caption">
               <h5>Enjoy it!</h5>
               <h1>Buena Onda Delas<h1>
                 <br>
               </div>
             </div>
-            <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),tinha uma url aqui olhar no codigo do bnb">
-              <%= image_tag "https://source.unsplash.com/random", class: "d-block w-100" %>
+            <div class="carousel-item"  style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), tinha uma url aqui olhar no codigo do bnb">
+              <%= image_tag "https://source.unsplash.com/user/erondu", class: "d-block w-100" %>
               <div class="carousel-caption">
                 <h5>Enjoy it!</h5>
                 <h1>Buena Onda Delas<h1>
                   <br>
                 </div>
               </div>
-              <div class="carousel-item"  style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), tinha uma url aqui olhar no codigo do bnb">
-                <%= image_tag "https://source.unsplash.com/user/erondu", class: "d-block w-100" %>
-                <div class="carousel-caption">
-                  <h5>Enjoy it!</h5>
-                  <h1>Buena Onda Delas<h1>
-                    <br>
-                  </div>
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true" style="width: 100%; height: 40px;"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true" style="width: 100%; height: 40px;"></span>
-                <span class="sr-only">Next</span>
-              </a>
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true" style="width: 100%; height: 40px;"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true" style="width: 100%; height: 40px;"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
 
-            <div class="container mt-5">
-              <div class="row">
-                <ul class="cards">
-                  <li class="cards__item">
-                    <div class="card">
-                      <div class="card__image card__image--fence"></div>
-                      <div class="card__content">
-                        <div class="card__title">
-                          <div class="text-center">
-                           <p class="a_title"> <%= link_to 'Camisas', root_path %></p>
-                         </div>
-                       </div>
-                       <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
-                       <button class="btn btn--block card__btn">Confira</button>
-                     </div>
-                   </div>
-                 </li>
-                 <li class="cards__item">
-                  <div class="card">
-                    <div class="card__image card__image--river"></div>
-                    <div class="card__content">
-                      <div class="card__title">
-                        <div class="text-center">
-                         <p class="a_title">
-                          <%= link_to 'Saias', skirts_path %>
-                          </p>
-                       </div>
-                     </div>
-                     <p class="card__text">This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.</p>
-                     <button class="btn btn--block card__btn"><%= link_to 'Confira', skirts_path %></button>
-                   </div>
-                 </div>
-               </li>
-               <li class="cards__item">
+
+        <div class="about-bar">
+          <div class="row mt-5">
+            <div class="col-sm ml-5 mt-3">
+              <h1 class="bar-h1">Diferença<span class="span-bar">Equilibrio</span>Liberdade</h1>
+            </div>
+            <div class="col-sm mr-3 mt-3">
+              <p class="bar-p">about us</p>
+              <p class="bar-p">Woven Magazine celebrates artists, designers, and entrepreneurs while exploring the history of
+                <br>
+              design through travel.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mt-5">
+          <div class="row">
+            <ul class="cards">
+              <li class="cards__item">
                 <div class="card">
-                  <div class="card__image card__image--record"></div>
+                  <div class="card__image card__image--fence"></div>
                   <div class="card__content">
                     <div class="card__title">
                       <div class="text-center">
-                       <p class="a_title"> <%= link_to 'Calças', root_path %></p>
+                       <p id="p-title"><%= link_to 'Camisas', root_path, id: 'a-card' %></p>
                      </div>
                    </div>
-                   <p class="card__text">This defines the ability for a flex item to shrink if necessary. Negative numbers are invalid.</p>
-                   <button class="btn btn-outline-primary">Confira</button>
+                   <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
+                   <button class="btn btn--block card__btn">Confira</button>
                  </div>
                </div>
              </li>
-           </ul>
-         </div>
+             <li class="cards__item">
+              <div class="card">
+                <div class="card__image card__image--river"></div>
+                <div class="card__content">
+                  <div class="card__title">
+                    <div class="text-center">
+                      <p id="p-title"><%= link_to 'Saias', skirts_path, id: 'a-card' %></p>
+                  </div>
+                </div>
+                <p class="card__text">This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.</p>
+                <button class="btn btn--block card__btn"><%= link_to 'Confira', skirts_path %></button>
+              </div>
+            </div>
+          </li>
+          <li class="cards__item">
+            <div class="card">
+              <div class="card__image card__image--record"></div>
+              <div class="card__content">
+                <div class="card__title">
+                  <div class="text-center">
+                     <p id="p-title"><%= link_to 'Calças', root_path, id: 'a-card' %></p>
+                 </div>
+               </div>
+               <p class="card__text">This defines the ability for a flex item to shrink if necessary. Negative numbers are invalid.</p>
+               <button class="btn btn-outline-primary">Confira</button>
+             </div>
+           </div>
+         </li>
+       </ul>
+     </div>
+   </div>
+   <div class="all-grid">
+     <div class="container-grid">
+      <div class="positioner">
+        <div class="bottomcenter">
+          <p id="p-grid"><%= link_to 'Batons', skirts_path, id:'a-grid' %></p>
+        </div>
+        <a href="skirts"><%= image_tag "https://images.unsplash.com/photo-1498842812179-c81beecf902c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80", class: "grid d-block h-100 w-100"%></a>
+      </div>
+      <div class="positioner-2">
+       <div class="topleft">
+         <p id="p-grid"><%= link_to 'Camisetas', skirts_path, id:'a-grid' %></p>
        </div>
+       <a href="cloths"><%= image_tag "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80", class: "grid d-block h-100 w-100"%>
+       </a>
+     </div>
+     <div class="positioner-3">
+      <div class="bottomright">
+        <p id="p-grid"><%= link_to 'Regatas', skirts_path, id:'a-grid' %></p>
+      </div>
+      <a href="cloths"><%= image_tag "https://images.unsplash.com/photo-1516726817505-f5ed825624d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80", class: "grid d-block h-100 w-100" %></a>
+    </div>
+    <div class="container-grid-2">
+      <div class="positioner-4">
+        <div class="rightcenter">
+          <p id="p-grid"><%= link_to 'Camisas', skirts_path, id:'a-grid' %></p>
+        </div>
+        <a href="cloths"><%= image_tag "https://images.unsplash.com/photo-1497378571960-a65470d60969?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80", class: "grid d-block h-100 w-100" %>
+        </a>
+      </div>
+      <div class="positioner-5">
+       <div class="topcenter">
+        <p id="p-grid"><%= link_to 'Blusas', skirts_path, id:'a-grid' %></p>
+      </div>
+      <a href="cloths"><%= image_tag "https://images.unsplash.com/photo-1560792422-0237de0e4d2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80", class: "grid d-block h-100 w-100" %>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="container-grid-3">
+  <div class="positioner-6">
+    <div class="bottomright">
+      <p id="p-grid"><%= link_to 'Jeans', skirts_path, id:'a-grid' %></p>
+    </div>
+    <a href="cloths"><%= image_tag "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80", class: "grid d-block h-100 w-100" %>
+    </a>
+  </div>
+  <div class="positioner-7">
+    <div class="centerright">
+      <p id="p-grid"><%= link_to 'Maquiagem', skirts_path, id:'a-grid' %></p>
+    </div>
+    <a href="cloths"><%= image_tag "https://images.unsplash.com/photo-1501644898242-cfea317d7faf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80", class: "grid d-block h-100 w-100" %></a>
+  </div>
+</div>
+<div class="container" style="margin-top: 100px;">
+  <div class="container-grid-photo">
+    <div class="positioner-photo">
+      <%= image_tag "https://plenaire.cdn.prismic.io/plenaire/716733281b130e508b7f2144a5200a1fce5f9aa2_home-lifestyle-1.jpg", class: "d-block h-100 w-100" %>
+    </div>
+    <div class="positioner-text">
+      <p id="p-photo">sinta<br>a<br>buena<br>onda</p>
+    </div>
+  </div>
+
+
