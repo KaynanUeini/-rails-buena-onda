@@ -157,6 +157,7 @@ img {
 .btn-outline-primary {
   color: #FFA5A5;
   border: 1px solid #F7EAE1;
+  text-decoration: none;
 
   &:hover {
     background-color: #F7EAE1;
@@ -171,4 +172,14 @@ img {
   text-decoration:none;
   color: black;
   font-weight: 1000;
+}
+
+#a-card-button {
+  text-decoration: none;
+  color: white;
+  background-color:black;
+  border: 1px solid black;
+  border-radius: 15px;
+  height:35px;
+  text-align: center;
 }
