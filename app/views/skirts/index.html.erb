@@ -1,4 +1,4 @@
-<%= render 'shared/navbar' %>
+
 <div class="container">
   <div class="content-wrapper">
     <div class="row">
@@ -6,16 +6,17 @@
       <div class="col-lg-3 col-md-4 col-sm-6 mt-5">
         <div class="card-photo-w-100">
           <%= image_tag "https://source.unsplash.com/random", class: "front-d-block-w-100", style: "height: 371px; width: 299px; background-size: cover;" %>
-           <%= image_tag "https://source.unsplash.com/user/erondu", class: "back-d-block-w-100", style: "height: 371px; width: 299px; background-size: cover;" %>
+          <%= image_tag "https://source.unsplash.com/user/erondu", class: "back-d-block-w-100", style: "height: 371px; width: 299px; background-size: cover;" %>
         </div>
         <div class="card-body">
           <p class="card-text">
+            <p class="p-brand"><%= skirt.brand.capitalize %></p>
             <p class="p-name"><%= skirt.name %></p>
             <p>R$ <%= skirt.price1 %></p>
+          </div>
         </div>
+        <% end %>
       </div>
-      <% end %>
     </div>
   </div>
-</div>
 

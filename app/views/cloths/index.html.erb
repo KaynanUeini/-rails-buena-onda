@@ -1,24 +1,20 @@
-<h1>Hello!</h1>
-<br>
-<br>
-<br>
-<p>Resultado da pesquisa :</p>
-<%= @cloths.each do |cloth| %>
-<%= link_to cloth_path(cloth) do %>
-<h1><%= cloth.name %></h1>
-<% end %>
-<h2><%= cloth.brand %></h2>
-<h3>R$ <%= cloth.price1 %></h3>
-<% end %>
-
-
-
-  <div class="col-xs-12 col-sm-4 col-sm-offset-4">
-    <%= @skirts.each do |skirt| %>
-
-    <%= link_to skirt_path(skirt) do %>
-    <h1><%= skirt.name %></h1>
-    <% end %>
-    <h2><%= skirt.price1 %></h2>
-    <% end %>
+<div class="container">
+  <div class="content-wrapper">
+    <div class="row">
+      <%= @cloths.each do |cloth| %>
+      <div class="col-lg-3 col-md-4 col-sm-6 mt-5">
+        <div class="card-photo-w-100">
+          <%= image_tag "https://source.unsplash.com/random", class: "front-d-block-w-100", style: "height: 371px; width: 299px; background-size: cover;" %>
+          <%= image_tag "https://source.unsplash.com/user/erondu", class: "back-d-block-w-100", style: "height: 371px; width: 299px; background-size: cover;" %>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            <p class="p-brand"><%= cloth.brand.capitalize %></p>
+            <p class="p-name"><%= cloth.name.upcase %></p>
+            <p>R$ <%= cloth.price1 %></p>
+          </div>
+        </div>
+        <% end %>
+      </div>
+    </div>
   </div>
