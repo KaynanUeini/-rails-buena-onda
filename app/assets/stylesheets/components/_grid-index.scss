@@ -1,0 +1,30 @@
+
+.card-body {
+  text-align: left;
+  height:100px;
+  padding: 0px 0px 0px 0px;
+}
+
+.p-name {
+ margin: 0px 0px 5px 0px;
+ color: black;
+ font: 15px minion-pro,serif;
+}
+
+.card-photo-w-100 {
+  display: inline-block;
+  position:relative;
+}
+
+.card-photo-w-100 .front-d-block-w-100 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+
+.card-photo-w-100:hover .front-d-block-w-100 {
+  display: inline;
+}
