@@ -32,9 +32,30 @@
   top: 0;
   left: 0;
   z-index: 99;
+
 }
 
 
 .card-photo-w-100:hover .front-d-block-w-100 {
   display: inline;
+}
+
+.price1 {
+margin-left: 75px;
+text-decoration: line-through;
+}
+
+.price2 {
+font-weight: bold;
+color: black;
+margin-left: 10px;
+}
+
+.price1-normal {
+  color: black;
+  font-weight: bold;
+}
+
+.stock {
+margin: auto;
 }

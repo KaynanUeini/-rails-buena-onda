@@ -1,7 +1,11 @@
-
+.all-grid {
+  height: 160vh;
+  margin-left: -20px;
+  text-align: center;
+}
 .container-grid {
-  min-height: 80vh;
-  margin: 0px 30px 0px 30px;
+  margin-left: 40px;
+  margin: 0px 30px 0px 0px;
   display: grid;
   grid-template-columns: 297px 596px 297px;
   grid-template-rows: 40vh;
@@ -14,8 +18,8 @@
   grid-template-rows: 40vh;
 }
 .container-grid-3 {
-  min-height: 84vh;
-  margin: 0px 30px 0px 30px;
+
+  margin: 0px 30px 0px 0px;
   display: grid;
   grid-template-columns: 596px 596px;
   grid-template-rows: 40vh;

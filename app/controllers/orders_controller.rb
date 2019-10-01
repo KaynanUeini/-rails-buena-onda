@@ -10,6 +10,8 @@ class OrdersController < ApplicationController
     @order.cloth = @cloth
     @order.price = @cloth.price1
     if @order.save
+       @cloth.stock -= @order.quantity
+      @cloth.save
       flash[:notice] = "Congratulations! #{@order.quantity} #{@order.cloth.name} added to your shopping bag."
     end
     redirect_to dashboard_bag_path
@@ -22,6 +24,8 @@ class OrdersController < ApplicationController
     @order.cloth = @skirt
     @order.price = @skirt.price1
     if @order.save
+      @skirt.stock -= @order.quantity
+      @skirt.save
       flash[:notice] = "Congratulations! #{@order.quantity} #{@order.cloth.name} added to your shopping bag."
     end
     redirect_to dashboard_bag_path

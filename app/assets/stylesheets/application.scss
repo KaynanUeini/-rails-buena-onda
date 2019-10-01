@@ -15,9 +15,14 @@
 body {
   min-height: 80vh;
   background-color: #f7f7f7;
+  padding: 0px 0px 0px 0px;
+   /* pra home ficar "encaixada" tem que tirar o padding */
   /* margin bottom = footer height */
 }
 
 .container {
-  min-height: 84vh;
+  min-height: 98vh;
+  padding: 0px 0px 0px 0px;
+
 }
+
