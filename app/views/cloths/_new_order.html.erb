@@ -1,7 +1,6 @@
 <%= simple_form_for [@cloth, @order] do |f| %>
               <%= f.error_notification %>
               <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
-              <%= f.error :user_insuficient_credit %>
                 <div class="form-inputs d-flex justify-content-start ml-4">
                   <%= f.input :quantity, collection: 1..@cloth.stock, include_blank: false %>
                 </div>
