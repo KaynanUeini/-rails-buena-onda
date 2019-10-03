@@ -5,7 +5,24 @@
     <a class="btn btn-flat" href="#">Apply now</a>
   </div>
 </div>
+<ul class="nav justify-content-center">
+ <li class="nav-item">
+  <a class="nav-link active" href="#">Active</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#">Link</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#">Link</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link disabled" href="#">Disabled</a>
+</li>
+</ul>
+
+
 <div class="container">
+  <p style="text-align: end;"><%= @cloths.count %> resultados encontrados.</p>
   <div class="content-wrapper">
     <div class="row">
       <%= @cloths.each do |cloth| %>
@@ -18,16 +35,19 @@
         <div class="card-body">
           <p class="card-text">
             <p class="p-brand"><%= cloth.brand.capitalize %></p>
-            <p class="p-name"><%= cloth.name.capitalize %></p>
+            <p class="p-name" style="text-align: center"><%= cloth.name.capitalize %></p>
             <% end %>
-            <p>INDEXXXX</p>
-            <p><%= cloth.stock %></p>
-            <div class="row">
+            <p>Index</p>
+            <div class="row" style="margin: auto; float: none;">
+              <% if cloth.stock == 0 %>
+              <p class="stock">Produto esgotado</p>
+              <% else %>
               <% if cloth.price2.nil? == false %>
               <p class="price1">R$ <%= cloth.price1 %></p>
               <p class="price2">R$ <%= cloth.price2 %></p>
               <% else %>
-              <p class="price1-normal">R$ <%= cloth.price1 %></p>
+              <p class="price1-normal" style="margin: auto;">R$ <%= cloth.price1 %></p>
+              <% end %>
               <% end %>
             </div>
           </div>

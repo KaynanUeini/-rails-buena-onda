@@ -1,0 +1,31 @@
+.all-grid-container {
+  border: 5px solid yellow;
+  height: 700px;
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  background-color: white;
+}
+
+.positioner-photo-show {
+  position:relative;
+  width: 100%;
+  height: 690px;
+  z-index: 1;
+}
+
+.positioner-text-show {
+  position:relative;
+  margin-left: 40px;
+  width: 92%;
+  height: 100%;
+  background-color:transparent;
+}
+
+.p-grid-show {
+  color: black;
+  font: 18px Lato, sans-serif;
+  font-weight: 100 lighter;
+  text-align: left;
+}
+
+

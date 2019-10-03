@@ -1,20 +1,28 @@
-  <div class="container pt-5 pr-5">
-    <div class="wrapper">
-      <div class="product-img">
-        <img src="https://source.unsplash.com/random" height="420" width="327">
-      </div>
-      <div class="product-info">
-        <div class="product-text">
-          <h1><%= @cloth.name.upcase %></h1>
-          <h2><%= @cloth.brand.upcase %></h2>
-          <p><%= @cloth.description %> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et saepe iste nesciunt magni dicta, eligendi minima, ullam, quisquam maiores sequi eum officia vel nulla placeat earum ipsa quia ducimus sint.</p>
-          <p><span>R$<%= @cloth.price1 %></span>$</p>
-        </div>
-        <div class="product-price-btn">
-          <%= render 'cloths/new_order', cloth: @cloth, order: @order %>
-        </div>
-      </div>
-    </div>
+ <div class="nav pb-5">
+   <%= render 'shared/navbar' %>
+ </div>
+ <div class="all-grid-container mt-5">
+  <div class="positioner-photo-show">
+    <%= image_tag "https://img.lojasrenner.com.br/item/548694255/zoom/1.jpg", class: "d-block h-100 w-100" %>
   </div>
+  <div class="positioner-text-show">
+    <p class="p-grid-show mt-5"><%= @cloth.brand.capitalize %></p>
+    <p class="p-grid-show"><%= @cloth.name.upcase %></p>
+    <p class="p-grid-show">Tamanho: <%= @cloth.size %></p>
+    <hr style="width: 90%">
+    <% if @cloth.price2.nil? %>
+      <p class="p-grid-show">Tamanho: <%= @cloth.price1 %></p>
+      <% else %>
+      <p class="p-grid-show">De: R$ <%= @cloth.price1 %></p>
+      <p class="p-grid-show">Por: R$ <%= @cloth.price2 %></p>
+      <% end %>
+      <% if @cloth.stock == 0 %>
+      <p class="p-grid-show">Produto Esgotado</p>
+      <% else %>
+      <%= render 'cloths/new_order', cloth: @cloth, order: @order %>
+      <% end %>
+  </div>
+</div>
+<p>Similar products</p>
 
-  <%=link_to 'Return to all cloths', cloths_path  %>
+<%=link_to 'Return to all cloths', cloths_path  %>

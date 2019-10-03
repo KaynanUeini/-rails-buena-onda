@@ -21,7 +21,7 @@ class SkirtsController < ApplicationController
   private
 
   def skirt_params
-    params.require(:cloth).permit(:price1, :name, :category, :brand)
+    params.require(:cloth).permit(:price1, :name, :category, :brand, :size)
   end
 
   def set_skirt
